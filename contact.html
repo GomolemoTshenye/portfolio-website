@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Gomolemo Tshenye</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 smooth-scroll">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold text-blue-600">Gomolemo Tshenye</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+            <button id="hamburger" class="md:hidden focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="flex flex-col items-center py-4 space-y-4">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
+                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="py-16 fade-in">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-8">Get in Touch</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2">
+                    <p class="text-lg mb-4">Feel free to reach out to me for collaboration or inquiries!</p>
+                    <p class="text-gray-600 mb-2"><i data-lucide="mail" class="inline-block mr-2"></i> Email: israeltshenye@gmail.com</p>
+                    <p class="text-gray-600 mb-2"><i data-lucide="github" class="inline-block mr-2"></i> GitHub: <a href="https://github.com/GomolemoTshenye" class="text-blue-600 hover:underline">github.com/gomolemo\</a></p>
+                    <p class="text-gray-600 mb-2"><i data-lucide="linkedin" class="inline-block mr-2"></i> LinkedIn: <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="text-blue-600 hover:underline">linkedin.com/in/gomolemo</a></p>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-semibold mb-2">Name</label>
+                            <input type="text" id="name" class="w-full p-3 border rounded-lg" placeholder="Your Name">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-semibold mb-2">Email</label>
+                            <input type="email" id="email" class="w-full p-3 border rounded-lg" placeholder="Your Email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-semibold mb-2">Message</label>
+                            <textarea id="message" class="w-full p-3 border rounded-lg" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 hover-scale" onclick="sendMessage()">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-6 fade-in">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>© 2025 Gomolemo Tshenye. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
