@@ -1,87 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Gomolemo Tshenye</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Gomolemo Tshenye</title>
+  <meta name="description" content="Selected projects by Gomolemo Tshenye — Android, .NET, React, statistical analysis, and cloud-integrated web apps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-gray-100 text-gray-800 smooth-scroll">
-    
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">Gomolemo Tshenye</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
-                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
-                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-            </div>
-            <button id="hamburger" class="md:hidden focus:outline-none">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="flex flex-col items-center py-4 space-y-4">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
-                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
-                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-            </div>
-        </div>
-    </nav>
+<body>
 
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <section class="py-16 fade-in">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">My Projects</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale fade-in">
-                    <img src="images/Cybersecurity Awareness Chatbot.jpg" alt="Cybersecurity Chatbot" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Cybersecurity Awareness Chatbot</h3>
-                        <p class="text-gray-600 mb-4">A chatbot designed to educate users on cybersecurity best practices.</p>
-                        <p class="text-sm text-gray-500 mb-4">Technologies: Python, JavaScript, HTML, CSS</p>
-                        <a href="#" class="text-blue-600 hover:underline">GitHub</a> |
-                        <a href="#" class="text-blue-600 hover:underline">Live Demo</a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale fade-in">
-                    <img src="images/Mobile-Friendly Website.jpg" alt="Mobile-Friendly Website" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Mobile-Friendly Website</h3>
-                        <p class="text-gray-600 mb-4">A responsive website optimized for mobile and desktop users.</p>
-                        <p class="text-sm text-gray-500 mb-4">Technologies: HTML, CSS, JavaScript</p>
-                        <a href="#" class="text-blue-600 hover:underline">GitHub</a> |
-                        <a href="#" class="text-blue-600 hover:underline">Live Demo</a>
-                    </div>
-                </div>
-                
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden hover-scale fade-in">
-                    <img src="images/Azure-Integrated Web App.png" alt="Azure Web App" class="w-full h-48 object-cover">
-                    <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Azure-Integrated Web App</h3>
-                        <p class="text-gray-600 mb-4">A web application built with ASP.NET Core MVC and Azure Blob Storage.</p>
-                        <p class="text-sm text-gray-500 mb-4">Technologies: C#, ASP.NET Core, Azure</p>
-                        <a href="#" class="text-blue-600 hover:underline">GitHub</a> |
-                        <a href="#" class="text-blue-600 hover:underline">Live Demo</a>
-                    </div>
-                </div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        gomolemo.tshenye
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">home</a>
+        <a href="about.html" class="nav-link">about</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="contact.html" class="nav-link">contact</a>
+      </div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="transition: transform .25s ease">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mm-inner">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="reveal">
+        <div class="section-eyebrow">selected work</div>
+        <h1 class="section-title">Projects, in roughly the order they happened.</h1>
+        <p class="section-lead">
+          A mix of academic, team, and personal builds. Where the academic project was group work, I've named my own contribution.
+        </p>
+      </div>
+
+      <div class="projects reveal-stagger">
+
+        <!-- 01 Lotto Lab -->
+        <article class="project">
+          <div class="project-thumb svg-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="lg1" x1="0" x2="1">
+                  <stop offset="0" stop-color="#E8A56B" stop-opacity="0.0"/>
+                  <stop offset="1" stop-color="#E8A56B" stop-opacity="0.6"/>
+                </linearGradient>
+              </defs>
+              <!-- axis lines -->
+              <line x1="30" y1="180" x2="380" y2="180" stroke="#9A968B" stroke-width="0.5" opacity="0.5"/>
+              <line x1="30" y1="30" x2="30" y2="180" stroke="#9A968B" stroke-width="0.5" opacity="0.5"/>
+              <!-- bars -->
+              <g fill="#E8A56B" opacity="0.85">
+                <rect x="50"  y="120" width="14" height="60"/>
+                <rect x="74"  y="90"  width="14" height="90"/>
+                <rect x="98"  y="140" width="14" height="40"/>
+                <rect x="122" y="70"  width="14" height="110"/>
+                <rect x="146" y="100" width="14" height="80"/>
+                <rect x="170" y="60"  width="14" height="120"/>
+                <rect x="194" y="110" width="14" height="70"/>
+                <rect x="218" y="80"  width="14" height="100"/>
+                <rect x="242" y="50"  width="14" height="130"/>
+                <rect x="266" y="95"  width="14" height="85"/>
+                <rect x="290" y="115" width="14" height="65"/>
+                <rect x="314" y="75"  width="14" height="105"/>
+                <rect x="338" y="105" width="14" height="75"/>
+              </g>
+              <!-- trend line -->
+              <polyline fill="none" stroke="#F5BC85" stroke-width="2"
+                points="57,140 81,110 105,160 129,90 153,120 177,80 201,130 225,100 249,70 273,115 297,135 321,95 345,125"/>
+              <!-- balls -->
+              <g>
+                <circle cx="60"  cy="40" r="10" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="60" y="44" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#E8E4DC">07</text>
+                <circle cx="92"  cy="40" r="10" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="92" y="44" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#E8E4DC">19</text>
+                <circle cx="124" cy="40" r="10" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="124" y="44" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#E8E4DC">23</text>
+                <circle cx="156" cy="40" r="10" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="156" y="44" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#E8E4DC">34</text>
+                <circle cx="188" cy="40" r="10" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="188" y="44" text-anchor="middle" font-family="JetBrains Mono" font-size="10" fill="#E8E4DC">41</text>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2025 · personal</span>
+              <span class="index">01 / 06</span>
             </div>
-        </div>
+            <h3>Lotto Lab</h3>
+            <p class="project-desc">
+              A self-contained statistical analysis and prediction site for the SA National Lottery. Five models (Frequency, Recency, Poisson, Markov, Ensemble) plus a walk-forward backtest engine across Lotto, PowerBall, and Daily Lotto — updated for the June 2026 Sizekhaya operator change.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Statistics</span>
+              <span class="tag">VS Code</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link muted">→ code (private)</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 02 Wallet Willow -->
+        <article class="project">
+          <div class="project-thumb svg-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- phone frame -->
+              <rect x="120" y="20" width="160" height="180" rx="20" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+              <rect x="130" y="35" width="140" height="150" rx="8" fill="#14161B"/>
+              <text x="200" y="62" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#9A968B">NOV BUDGET</text>
+              <text x="200" y="88" text-anchor="middle" font-family="Bricolage Grotesque" font-size="22" fill="#E8E4DC" font-weight="500">R 4,820</text>
+              <!-- donut -->
+              <circle cx="200" cy="135" r="28" fill="none" stroke="#20242D" stroke-width="8"/>
+              <circle cx="200" cy="135" r="28" fill="none" stroke="#E8A56B" stroke-width="8"
+                stroke-dasharray="120 175" stroke-dashoffset="0" transform="rotate(-90 200 135)" stroke-linecap="round"/>
+              <text x="200" y="139" text-anchor="middle" font-family="JetBrains Mono" font-size="11" fill="#E8E4DC">68%</text>
+              <!-- bottom rows -->
+              <rect x="140" y="172" width="50" height="3" rx="1.5" fill="#9A968B" opacity="0.4"/>
+              <rect x="140" y="180" width="80" height="3" rx="1.5" fill="#9A968B" opacity="0.4"/>
+              <!-- side icons -->
+              <circle cx="60" cy="60" r="3" fill="#E8A56B"/>
+              <circle cx="60" cy="80" r="3" fill="#9A968B" opacity="0.4"/>
+              <circle cx="60" cy="100" r="3" fill="#9A968B" opacity="0.4"/>
+              <circle cx="340" cy="60" r="3" fill="#9A968B" opacity="0.4"/>
+              <circle cx="340" cy="80" r="3" fill="#E8A56B"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2025 · PROG7313 · team</span>
+              <span class="index">02 / 06</span>
+            </div>
+            <h3>Wallet Willow</h3>
+            <p class="project-desc">
+              A cloud-synced personal-budgeting Android app, built in Kotlin with Room for offline storage, Firebase Authentication, and custom Canvas-based chart views. I led the Firebase Firestore integration; the team shipped a demo video and submission package.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Kotlin</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">Room</span>
+              <span class="tag">Android</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link muted">→ academic submission</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 03 TechLogistics -->
+        <article class="project">
+          <div class="project-thumb svg-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- docker containers -->
+              <g font-family="JetBrains Mono" font-size="9" fill="#E8E4DC">
+                <rect x="40"  y="60" width="100" height="100" rx="6" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="90" y="78" text-anchor="middle">api</text>
+                <text x="90" y="92" text-anchor="middle" fill="#9A968B" font-size="7">:8080</text>
+                <rect x="50" y="100" width="80" height="3" rx="1.5" fill="#E8A56B" opacity="0.6"/>
+                <rect x="50" y="108" width="60" height="3" rx="1.5" fill="#9A968B" opacity="0.4"/>
+                <rect x="50" y="116" width="70" height="3" rx="1.5" fill="#9A968B" opacity="0.4"/>
+                <text x="90" y="148" text-anchor="middle" fill="#9A968B" font-size="7">Web API</text>
+
+                <rect x="150" y="60" width="100" height="100" rx="6" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="200" y="78" text-anchor="middle">mvc</text>
+                <text x="200" y="92" text-anchor="middle" fill="#9A968B" font-size="7">:5000</text>
+                <rect x="160" y="100" width="80" height="3" rx="1.5" fill="#E8A56B" opacity="0.6"/>
+                <rect x="160" y="108" width="50" height="3" rx="1.5" fill="#9A968B" opacity="0.4"/>
+                <rect x="160" y="116" width="65" height="3" rx="1.5" fill="#9A968B" opacity="0.4"/>
+                <text x="200" y="148" text-anchor="middle" fill="#9A968B" font-size="7">MVC frontend</text>
+
+                <rect x="260" y="60" width="100" height="100" rx="6" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <text x="310" y="78" text-anchor="middle">db</text>
+                <text x="310" y="92" text-anchor="middle" fill="#9A968B" font-size="7">:1433</text>
+                <ellipse cx="310" cy="115" rx="22" ry="6" fill="none" stroke="#E8A56B" opacity="0.6"/>
+                <ellipse cx="310" cy="125" rx="22" ry="6" fill="none" stroke="#E8A56B" opacity="0.5"/>
+                <ellipse cx="310" cy="135" rx="22" ry="6" fill="none" stroke="#E8A56B" opacity="0.4"/>
+                <text x="310" y="148" text-anchor="middle" fill="#9A968B" font-size="7">SQL Server</text>
+              </g>
+              <!-- bridge network -->
+              <line x1="140" y1="110" x2="150" y2="110" stroke="#E8A56B" stroke-dasharray="2 2" opacity="0.6"/>
+              <line x1="250" y1="110" x2="260" y2="110" stroke="#E8A56B" stroke-dasharray="2 2" opacity="0.6"/>
+              <text x="200" y="40" text-anchor="middle" font-family="JetBrains Mono" font-size="9" fill="#9A968B">$ docker compose up</text>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2025 · PROG7311 · solo</span>
+              <span class="index">03 / 06</span>
+            </div>
+            <h3>TechLogistics</h3>
+            <p class="project-desc">
+              A Global Logistics Management System refactored into a three-project .NET 10 solution — Web API with JWT auth, MVC frontend, and a NUnit test project — running on three named Docker containers over a bridge network. Spent real time debugging the SQL Server 2022 sqlcmd healthcheck.
+            </p>
+            <div class="project-tags">
+              <span class="tag">.NET 10</span>
+              <span class="tag">C#</span>
+              <span class="tag">Docker</span>
+              <span class="tag">JWT</span>
+              <span class="tag">NUnit</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link muted">→ academic submission</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 04 Emeris Pulse -->
+        <article class="project">
+          <div class="project-thumb svg-thumb">
+            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <!-- three overlapping phone mocks -->
+              <g>
+                <rect x="60"  y="35" width="80" height="150" rx="14" fill="#181B22" stroke="#9A968B" stroke-width="0.6" opacity="0.6" transform="rotate(-6 100 110)"/>
+                <rect x="260" y="35" width="80" height="150" rx="14" fill="#181B22" stroke="#9A968B" stroke-width="0.6" opacity="0.6" transform="rotate(6 300 110)"/>
+                <rect x="160" y="25" width="80" height="170" rx="14" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
+                <!-- center content -->
+                <rect x="170" y="40" width="60" height="3" rx="1.5" fill="#E8A56B"/>
+                <rect x="170" y="50" width="40" height="2" rx="1" fill="#9A968B" opacity="0.5"/>
+                <rect x="170" y="65" width="60" height="32" rx="4" fill="#20242D"/>
+                <text x="200" y="85" text-anchor="middle" font-family="Bricolage Grotesque" font-size="11" fill="#E8E4DC">PULSE</text>
+                <rect x="170" y="105" width="60" height="20" rx="4" fill="#20242D"/>
+                <rect x="170" y="130" width="60" height="20" rx="4" fill="#20242D"/>
+                <circle cx="180" cy="170" r="4" fill="#E8A56B"/>
+                <circle cx="200" cy="170" r="4" fill="#9A968B" opacity="0.4"/>
+                <circle cx="220" cy="170" r="4" fill="#9A968B" opacity="0.4"/>
+              </g>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2025 · INSY7311 · solo</span>
+              <span class="index">04 / 06</span>
+            </div>
+            <h3>Emeris Pulse</h3>
+            <p class="project-desc">
+              A campus mobile-app prototype: eight hi-fi screens designed and built in React/TSX with Tailwind CSS, paired with a written analysis applying Norman / Shneiderman interaction principles and LU6 visual design (unity, balance, dominance, Gestalt, control, alignment, hierarchy, scale).
+            </p>
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Tailwind</span>
+              <span class="tag">UX / Usability</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link muted">→ academic submission</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 05 Azure-Integrated Web App -->
+        <article class="project">
+          <div class="project-thumb">
+            <img src="images/Azure-Integrated Web App.png" alt="Azure-integrated ASP.NET Core web application screenshot" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2024 · academic</span>
+              <span class="index">05 / 06</span>
+            </div>
+            <h3>Azure-Integrated Web App</h3>
+            <p class="project-desc">
+              An ASP.NET Core MVC web application that uses Azure services for blob storage and hosting. A useful first taste of treating cloud infrastructure as a first-class part of the application, not an afterthought.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">Azure</span>
+              <span class="tag">Blob Storage</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link muted">→ academic submission</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- 06 Cybersecurity Chatbot -->
+        <article class="project">
+          <div class="project-thumb">
+            <img src="images/Cybersecurity Awareness Chatbot.jpg" alt="Cybersecurity awareness chatbot interface screenshot" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2024 · academic</span>
+              <span class="index">06 / 06</span>
+            </div>
+            <h3>Cybersecurity Awareness Chatbot</h3>
+            <p class="project-desc">
+              A chatbot designed to walk users through common online threats phishing, password hygiene, social engineering — in plain language. Built to make the security advice that usually lives in PDFs feel like a conversation instead.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link muted">→ academic submission</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
     </section>
+  </main>
 
-    <footer class="bg-gray-800 text-white py-6 fade-in">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>© 2025 Gomolemo Tshenye. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Gomolemo Tshenye</span>
+      <span>
+        <a href="mailto:israeltshenye@gmail.com">israeltshenye@gmail.com</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/GomolemoTshenye" target="_blank" rel="noopener">github</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320" target="_blank" rel="noopener">linkedin</a>
+      </span>
+    </div>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

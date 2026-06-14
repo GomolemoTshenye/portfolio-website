@@ -1,80 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Gomolemo Tshenye</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Gomolemo Tshenye</title>
+  <meta name="description" content="About Gomolemo Tshenye — third-year Computer Science student at the IIE, building full-stack, Android, and cloud systems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="bg-gray-100 text-gray-800 smooth-scroll">
+<body>
 
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-blue-600">Gomolemo Tshenye</a>
-            <div class="hidden md:flex space-x-6">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
-                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
-                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-            </div>
-            <button id="hamburger" class="md:hidden focus:outline-none">
-                <i data-lucide="menu" class="w-6 h-6"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
-            <div class="flex flex-col items-center py-4 space-y-4">
-                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
-                <a href="about.html" class="text-gray-600 hover:text-blue-600">About</a>
-                <a href="projects.html" class="text-gray-600 hover:text-blue-600">Projects</a>
-                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
-            </div>
-        </div>
-    </nav>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
 
-    <section class="py-16 fade-in">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
-            <div class="flex flex-col md:flex-row items-center gap-8">
-                <img src="images/me.jpg" alt="Profile" class="w-48 h-48 rounded-full object-cover shadow-lg">
-<div>
-    <p class="text-lg mb-4">
-        My name is Gomolemo Tshenye, and I am currently a second-year Bachelor of Computer Science student at Varsity College in Pretoria. I previously earned a Higher Certificate in Web and Mobile Application Development, which laid a solid foundation in both front-end and back-end development principles. Through my academic journey, I have gained hands-on experience with a diverse set of technologies, including HTML, CSS, JavaScript, C#, Java, and Python. I am also proficient in working with cloud computing services, particularly Microsoft Azure, where I have deployed and maintained web-based applications.
-    </p>
-    <p class="text-lg mb-4">
-        My portfolio includes a variety of projects that reflect my technical versatility and problem-solving capabilities. Notable examples include the development of a cybersecurity awareness chatbot designed to educate users about common online threats, the creation of mobile-responsive websites optimized for performance across devices, and the implementation of cloud-enabled applications using ASP.NET Core MVC and Azure services. These projects have not only strengthened my software engineering skills but also deepened my understanding of secure coding practices, database integration, and agile methodologies.
-    </p>
-    <p class="text-lg mb-4">
-        In addition to my technical work, I have gained practical experience in administrative and customer-facing roles. As a registration assistant, I supported student enrollment activities, managed event logistics, and interacted with prospective students and parents—enhancing my communication, organization, and teamwork abilities. These soft skills have proven invaluable in both academic and project collaboration settings.
-    </p>
-    <p class="text-lg mb-4">
-        I have a strong passion for user interface and user experience (UI/UX) design, as I believe intuitive and accessible software is key to user satisfaction. I actively use version control tools like Git and GitHub to manage codebases and collaborate effectively with teams. I am committed to continuous learning and regularly explore emerging technologies, frameworks, and best practices to stay current in this fast-evolving industry. My long-term goal is to contribute meaningfully to software solutions that improve everyday life while advancing my career as a full-stack developer or cloud solutions architect.</p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        gomolemo.tshenye
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">home</a>
+        <a href="about.html" class="nav-link">about</a>
+        <a href="projects.html" class="nav-link">projects</a>
+        <a href="contact.html" class="nav-link">contact</a>
+      </div>
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" style="transition: transform .25s ease">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="mobile-menu">
+      <div class="mm-inner">
+        <a href="index.html">home</a>
+        <a href="about.html">about</a>
+        <a href="projects.html">projects</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
 
-                    <a href="assets/GOMOLEMOTSHENYECS.CV.pdf" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700 hover-scale">Download CV</a>
-                </div>
+  <main>
+    <section class="section">
+      <div class="reveal">
+        <div class="section-eyebrow">about</div>
+        <h1 class="section-title">A short version of a longer story.</h1>
+      </div>
+
+      <div class="about-grid">
+        <aside class="about-side reveal">
+          <img src="images/me.jpg" alt="Portrait of Gomolemo Tshenye" class="about-portrait" />
+
+          <div class="about-card">
+            <div class="about-card-row">
+              <span class="k">name</span>
+              <span class="v">Gomolemo Tshenye</span>
             </div>
-            <h3 class="text-2xl font-semibold mt-12 mb-6 text-center">My Skills</h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="code" class="inline-block mb-2"></i> HTML</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="code" class="inline-block mb-2"></i> CSS</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="code" class="inline-block mb-2"></i> JavaScript</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="code" class="inline-block mb-2"></i> C#</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="code" class="inline-block mb-2"></i> Java</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="code" class="inline-block mb-2"></i> Python</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="cloud" class="inline-block mb-2"></i> Azure</div>
-                <div class="bg-white p-4 rounded-lg shadow-md text-center hover-scale"><i data-lucide="git-branch" class="inline-block mb-2"></i> GitHub</div>
+            <div class="about-card-row">
+              <span class="k">location</span>
+              <span class="v">Pretoria, ZA</span>
             </div>
+            <div class="about-card-row">
+              <span class="k">studying</span>
+              <span class="v">BCS · Year 3</span>
+            </div>
+            <div class="about-card-row">
+              <span class="k">institution</span>
+              <span class="v">The IIE Emeris Pretoria</span>
+            </div>
+            <div class="about-card-row">
+              <span class="k">student №</span>
+              <span class="v">ST10341577</span>
+            </div>
+            <div class="about-card-row">
+              <span class="k">availability</span>
+              <span class="v" style="color: var(--success)">open</span>
+            </div>
+          </div>
+        </aside>
+
+<article class="about-prose reveal">
+  <p class="lede">
+    I'm Gomolemo Tshenye — a third-year Computer and Information Science student specializing in Application Development at <strong>Varsity College (IIE Emeris) Pretoria</strong>. I'm a full-stack developer who thrives on building robust, scalable applications that actually run and solve real-world problems.
+  </p>
+
+  <p>
+    Before this degree, I completed a Higher Certificate in Web and Mobile Application Development, which laid a strong foundation in both front-end and back-end architectures. Today, the CS programme provides the depth: I am mastering full-stack development, cloud integration, and UX design through advanced modules (PROG7311, PROG7313, INSY7311). Driven by a commitment to technical excellence, I consistently aim for top-tier performance across all my software projects and portfolios of evidence.
+  </p>
+
+  <p>
+    Most of my time outside class goes into bringing complex projects to life. <strong>Wallet Willow</strong> is a multi-platform personal-budgeting Android app built in Kotlin, specifically targeting students. I led the backend integration alongside my team, utilizing Firebase Auth, Firestore sync, Room for offline storage, and custom Canvas-based chart views. I've also developed <strong>SocialSpark</strong>, an Android schedule manager focusing on specialized time and date features for student tasks, and <strong>EventEase</strong>, a venue management system leveraging live Azure Blob Storage and SQL database integration. Most recently, I engineered <strong>Overlooked Group</strong>, a public-facing corporate .NET web prototype complete with an AI chatbot and a CSR portal.
+  </p>
+
+  <p>
+    On the side, I built <strong>Lotto Lab</strong> — a self-contained statistical analysis and prediction site for the South African National Lottery. It features five predictive models (Frequency, Recency, Poisson, Markov, Ensemble), a walk-forward backtest engine across Lotto, PowerBall, and Daily Lotto, and updated game rules. It started as a curiosity about whether theoretical modelling would survive contact with real draw data. Mostly, it doesn't—which is exactly what makes the data engineering so fascinating.
+  </p>
+
+  <p>
+    Alongside my technical work—which is further reinforced by Cisco Networking Academy certifications in Cybersecurity and Introduction to Modern AI—I've spent time in administrative and customer-facing roles. Supporting student enrollment and campus events as a registration assistant has been genuinely useful for the collaboration and communication side of building software. I am actively seeking Work Integrated Learning placements as a Web Developer, and I am highly motivated to pursue immersive graduate leadership programmes to apply these skills at an enterprise level.
+  </p>
+
+  <p>
+    What I care about: writing clean, maintainable code that is honest about its limitations; employing strict version control like an adult; and learning a new framework only when the old one stops solving the problem. Long-term, I am aiming at a full-stack engineering or cloud-architecture path.
+  </p>
+</article>
+
+          <div class="about-actions">
+            <a href="assets/GOMOLEMOTSHENYECS.CV.pdf" class="btn btn-primary" download>
+              Download CV
+              <span class="arrow">↓</span>
+            </a>
+            <a href="contact.html" class="btn btn-ghost">
+              Get in touch
+              <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div class="skills-block reveal">
+        <div class="section-eyebrow" style="margin-top: 16px">stack</div>
+        <h2 class="section-title" style="font-size: clamp(28px, 4vw, 40px); margin-bottom: 40px">What I work with</h2>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Languages</div>
+          <div class="skill-chips">
+            <span class="chip">Kotlin</span>
+            <span class="chip">C#</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">SQL</span>
+          </div>
         </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Frameworks &amp; Runtime</div>
+          <div class="skill-chips">
+            <span class="chip">.NET 10</span>
+            <span class="chip">ASP.NET Core MVC</span>
+            <span class="chip">Web API</span>
+            <span class="chip">React</span>
+            <span class="chip">Tailwind CSS</span>
+            <span class="chip">Android SDK</span>
+            <span class="chip">Room</span>
+            <span class="chip">NUnit</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Cloud &amp; Infrastructure</div>
+          <div class="skill-chips">
+            <span class="chip">Microsoft Azure</span>
+            <span class="chip">Firebase Auth</span>
+            <span class="chip">Firestore</span>
+            <span class="chip">Azure Blob Storage</span>
+            <span class="chip">Docker</span>
+            <span class="chip">SQL Server 2022</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Tools &amp; Practice</div>
+          <div class="skill-chips">
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">Visual Studio</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Figma</span>
+            <span class="chip">Hyper-V</span>
+            <span class="chip">JWT auth</span>
+            <span class="chip">Agile</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-label">Currently learning</div>
+          <div class="skill-chips">
+            <span class="chip">Backtest design</span>
+            <span class="chip">Markov &amp; Poisson models</span>
+            <span class="chip">UX heuristics</span>
+            <span class="chip">CI/CD pipelines</span>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <footer class="bg-gray-800 text-white py-6 fade-in">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <p>© 2025 Gomolemo Tshenye. All rights reserved.</p>
-        </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© 2026 Gomolemo Tshenye</span>
+      <span>
+        <a href="mailto:israeltshenye@gmail.com">israeltshenye@gmail.com</a>
+        &nbsp;·&nbsp;
+        <a href="https://github.com/GomolemoTshenye" target="_blank" rel="noopener">github</a>
+        &nbsp;·&nbsp;
+        <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320" target="_blank" rel="noopener">linkedin</a>
+      </span>
+    </div>
+  </footer>
 
-    <script src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
