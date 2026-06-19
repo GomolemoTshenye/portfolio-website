@@ -4,7 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Gomolemo Tshenye</title>
+  <meta name="author" content="Gomolemo Tshenye" />
   <meta name="description" content="About Gomolemo Tshenye — third-year Computer Science student at the IIE, building full-stack, Android, and cloud systems." />
+  <!--
+    ============================================================
+    PORTFOLIO TASK — REQUIREMENT MAP (about.html)
+    Author: Gomolemo Tshenye
+    Covers: About Me section, Skills section, Education and
+    Certifications. Resume/CV download is repeated here too.
+    ============================================================
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,6 +34,7 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">home</a>
         <a href="about.html" class="nav-link">about</a>
+        <a href="index.html#services" class="nav-link">services</a>
         <a href="projects.html" class="nav-link">projects</a>
         <a href="contact.html" class="nav-link">contact</a>
       </div>
@@ -40,6 +50,7 @@
       <div class="mm-inner">
         <a href="index.html">home</a>
         <a href="about.html">about</a>
+        <a href="index.html#services">services</a>
         <a href="projects.html">projects</a>
         <a href="contact.html">contact</a>
       </div>
@@ -47,6 +58,7 @@
   </nav>
 
   <main>
+    <!-- ===== REQUIRED: About Me section ===== -->
     <section class="section">
       <div class="reveal">
         <div class="section-eyebrow">about</div>
@@ -54,8 +66,9 @@
       </div>
 
       <div class="about-grid">
+        <!-- Sticky sidebar: portrait + quick-facts card (position: sticky in CSS keeps it in view while the prose column scrolls) -->
         <aside class="about-side reveal">
-          <img src="images/me.jpg" alt="Portrait of Gomolemo Tshenye" class="about-portrait" />
+          <img src="images/me2.jpg" alt="Portrait of Gomolemo Tshenye" class="about-portrait" />
 
           <div class="about-card">
             <div class="about-card-row">
@@ -64,15 +77,15 @@
             </div>
             <div class="about-card-row">
               <span class="k">location</span>
-              <span class="v">Pretoria, ZA</span>
+              <span class="v">Pretoria , ZA</span>
             </div>
             <div class="about-card-row">
               <span class="k">studying</span>
-              <span class="v">BCS · Year 3</span>
+              <span class="v"> IIE Bachelor of Computer and Information Sciences in Application Development(BCAD) · Year 3</span>
             </div>
             <div class="about-card-row">
               <span class="k">institution</span>
-              <span class="v">The IIE Emeris Pretoria</span>
+              <span class="v">The IIE(Emeris)</span>
             </div>
             <div class="about-card-row">
               <span class="k">student №</span>
@@ -85,33 +98,35 @@
           </div>
         </aside>
 
-<article class="about-prose reveal">
-  <p class="lede">
-    I'm Gomolemo Tshenye — a third-year Computer and Information Science student specializing in Application Development at <strong>Varsity College (IIE Emeris) Pretoria</strong>. I'm a full-stack developer who thrives on building robust, scalable applications that actually run and solve real-world problems.
-  </p>
+        <article class="about-prose reveal">
+          <p class="lede">
+            I'm Gomolemo Tshenye, a third-year IIE Bachelor of Computer and Information Sciences in Application Development student at <strong>The Independent Institute of Education (IIE) Emeris University</strong> in South Africa, and a developer who likes building systems that make a difference in the work space or public environment.
+          </p>
 
-  <p>
-    Before this degree, I completed a Higher Certificate in Web and Mobile Application Development, which laid a strong foundation in both front-end and back-end architectures. Today, the CS programme provides the depth: I am mastering full-stack development, cloud integration, and UX design through advanced modules (PROG7311, PROG7313, INSY7311). Driven by a commitment to technical excellence, I consistently aim for top-tier performance across all my software projects and portfolios of evidence.
-  </p>
+          <p>
+            Before this degree I completed a IIE Higher Certificate in Mobile Application and Web Development , which gave me a grounding in both the front and back of app development and web development. The BCAD programme has been where the depth has come from I'm currently working through Programming and Information Systems modules that span full-stack development, Android, cloud integration,Web development and UX.
+          </p>
 
-  <p>
-    Most of my time outside class goes into bringing complex projects to life. <strong>Wallet Willow</strong> is a multi-platform personal-budgeting Android app built in Kotlin, specifically targeting students. I led the backend integration alongside my team, utilizing Firebase Auth, Firestore sync, Room for offline storage, and custom Canvas-based chart views. I've also developed <strong>SocialSpark</strong>, an Android schedule manager focusing on specialized time and date features for student tasks, and <strong>EventEase</strong>, a venue management system leveraging live Azure Blob Storage and SQL database integration. Most recently, I engineered <strong>Overlooked Group</strong>, a public-facing corporate .NET web prototype complete with an AI chatbot and a CSR portal.
-  </p>
+          <p>
+            Most of my time outside class goes into projects. <strong>Wallet Willow</strong> is a cloud-synced personal-budgeting Android app I built in Kotlin with Firebase Auth, Firestore sync, Room for offline storage, and custom Canvas-based chart views I led the Firestore integration on a four-person team. <strong>TechLogistics</strong> is a logistics management system I refactored into a three-project .NET 10 solution (Web API with JWT auth, MVC frontend, NUnit tests) running on three named Docker containers over a bridge network. <strong>Emeris Pulse</strong> is a campus mobile app prototype I designed and built in React/TSX with Tailwind CSS, deliberately applying Interaction principles across eight screens.
+          </p>
 
-  <p>
-    On the side, I built <strong>Lotto Lab</strong> — a self-contained statistical analysis and prediction site for the South African National Lottery. It features five predictive models (Frequency, Recency, Poisson, Markov, Ensemble), a walk-forward backtest engine across Lotto, PowerBall, and Daily Lotto, and updated game rules. It started as a curiosity about whether theoretical modelling would survive contact with real draw data. Mostly, it doesn't—which is exactly what makes the data engineering so fascinating.
-  </p>
+          <p>
+            On the side, I built <strong>CyberSecurity Chatbot</strong>  is an enterprise-grade, full-stack conversational intelligence application built to assist IT administrators, developers, and security analysts. It streamlines threat identification, automates the parsing of system security logs, and provides immediate, actionable mitigation steps for common vulnerabilities.
 
-  <p>
-    Alongside my technical work—which is further reinforced by Cisco Networking Academy certifications in Cybersecurity and Introduction to Modern AI—I've spent time in administrative and customer-facing roles. Supporting student enrollment and campus events as a registration assistant has been genuinely useful for the collaboration and communication side of building software. I am actively seeking Work Integrated Learning placements as a Web Developer, and I am highly motivated to pursue immersive graduate leadership programmes to apply these skills at an enterprise level.
-  </p>
+Instead of manually digging through massive security databases or complex log files, users can converse with the chatbot to diagnose system vulnerabilities and query threat intelligence in real time.
+          </p>
 
-  <p>
-    What I care about: writing clean, maintainable code that is honest about its limitations; employing strict version control like an adult; and learning a new framework only when the old one stops solving the problem. Long-term, I am aiming at a full-stack engineering or cloud-architecture path.
-  </p>
-</article>
+          <p>
+            Alongside the technical work, I've spent time in administrative and customer-facing roles as a registration assistant supporting student enrollment and events, which has been genuinely useful for the collaboration and communication side of building software. I'm actively looking for opportunities to do this professionally in Tech and working environment.
+          </p>
+
+          <p>
+            What I care about: writing code that is correct, complete, and honest about its limitations; using version control like an adult; learning the new framework only when the old one stops solving the problem. Long term I'm aiming at full-stack engineering,Web development or a cloud-architecture path.
+          </p>
 
           <div class="about-actions">
+            <!-- REQUIRED: Resume/CV download button (also present on index.html hero) -->
             <a href="assets/GOMOLEMOTSHENYECS.CV.pdf" class="btn btn-primary" download>
               Download CV
               <span class="arrow">↓</span>
@@ -124,6 +139,8 @@
         </article>
       </div>
 
+      <!-- ===== REQUIRED: Skills section ===== -->
+      <!-- Skills grouped by category (Languages, Frameworks, Cloud, Tools, Currently learning) rather than a flat list, for scanability -->
       <div class="skills-block reveal">
         <div class="section-eyebrow" style="margin-top: 16px">stack</div>
         <h2 class="section-title" style="font-size: clamp(28px, 4vw, 40px); margin-bottom: 40px">What I work with</h2>
@@ -192,19 +209,112 @@
           </div>
         </div>
       </div>
+
+
+      <!-- ===== REQUIRED: Education and Certifications ===== -->
+      <!-- Reverse-chronological timeline: degree in progress, then ongoing self-study, then completed qualifications/certificates -->
+      <div class="education-block reveal" id="education">
+        <div class="section-eyebrow">education &amp; certifications</div>
+        <h2 class="section-title" style="font-size: clamp(28px, 4vw, 40px); margin-bottom: 40px">Studying and shipping.</h2>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-year">2024 — present</div>
+            <div class="timeline-body">
+              <h3>IIE Bachelor of Computer and Information Sciences in Application Development</h3>
+              <p class="timeline-org">The Independent Institute of Education · Year 3 (in progress)</p>
+              <p>Currently working through Programming, CompTIA+, Research and Information Systems modules which include (web programming, mobile / Android, UX and visual design) and applying each one to a real shipped project, and The IIE Bachelor of Computer and Information Sciences in Application Development, available at Emeris, provides candidates with a thorough theoretical grounding and knowledge base in the key principles of information technology (IT), programming, mobile application development across platforms, web development, database design, troubleshooting, testing, connectivity, customisation and project management. Expected graduation: 2027.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">— ongoing</div>
+            <div class="timeline-body">
+              <h3>Self-directed learning</h3>
+              <p class="timeline-org">Personal projects and tooling</p>
+              <p>Statistical modelling and walk-forward backtesting CyberSecurityChatbot, Firebase / Firestore integration, Docker orchestration of multi-container .NET solutions, and AI-automation workflows with n8n and Make.com.</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-year">COMPLETED</div>
+            <div class="timeline-body">
+              <h3>IIE Higher Certificate in Mobile Application and Web Development</h3>
+              <p class="timeline-org">The Independent Institute of Education(IIE)Emeris · (2023)-(January-December)Completed</p>
+              <p>The IIE Higher Certificate in Mobile Application and Web Development, available at Emeris, is structured in accordance with the HEQSF guidelines and will provide students with the knowledge, skills and applied competencies identified by the mobile application and web development industry to be employed or become an entrepreneur in building mobile apps and websites.
+
+The purpose of the IIE Higher Certificate in Mobile Application and Web Development is twofold. It will provide students with basic introductory knowledge, cognitive and conceptual tools and practical techniques for an entry-level career, or for further higher education studies in the field of mobile application and web development.</p>
+            </div>
+          </article>
+
+                <article class="timeline-item">
+            <div class="timeline-year">COMPLETED</div>
+            <div class="timeline-body">
+              <h3>Cisco’s "Introduction to Modern AI"</h3>
+              <p class="timeline-org">Cisco Networking Academy  · (2026)-(1 Month) Completed</p>
+              <p>The "Introduction to Modern AI" course, offered through the Cisco Networking Academy, is designed for learners with basic computer skills and no prior AI or coding experience 
+Networking Academy
+Networking Academy
+. It provides a foundational understanding of modern AI concepts and demonstrates how AI tools are applied in real-world scenarios, making it suitable for both technical and non-technical learners.</p>
+            </div>
+          </article>
+
+            <article class="timeline-item">
+            <div class="timeline-year">COMPLETED</div>
+            <div class="timeline-body">
+              <h3>Leadership training with Blanchard</h3>
+              <p class="timeline-org">Blanchard Academy  · (2025)-(3 Month) Completed</p>
+              <p>Blanchard provides a comprehensive range of leadership training programs tailored for different audiences, including corporate leaders, managers, and students. Their courses focus on practical skills and frameworks that can be applied in real-world situations to drive results and improve engagement within teams.</p>
+            </div>
+          </article>
+        </div>
+      </div>
     </section>
   </main>
 
+
   <footer class="footer">
     <div class="footer-inner">
-      <span>© 2026 Gomolemo Tshenye</span>
-      <span>
-        <a href="mailto:israeltshenye@gmail.com">israeltshenye@gmail.com</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/GomolemoTshenye" target="_blank" rel="noopener">github</a>
-        &nbsp;·&nbsp;
-        <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320" target="_blank" rel="noopener">linkedin</a>
-      </span>
+      <div class="footer-brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>gomolemo.tshenye</span>
+      </div>
+      <nav class="footer-social" aria-label="Social media links">
+        <a href="https://github.com/GomolemoTshenye" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="mailto:israeltshenye@gmail.com" aria-label="Email" title="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-10 5L2 7"/>
+          </svg>
+        </a>
+   
+        <a href="https://www.instagram.com/g.gomolemotshenye?igsh=M2RzaG42eTFiaHpu&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+          </svg>
+        </a>
+   
+        <a href="https://www.facebook.com/share/1BeQQFs7Kw/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook" title="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+      </nav>
+      <div class="footer-copy">© 2026 Gomolemo Tshenye. All rights reserved.</div>
     </div>
   </footer>
 

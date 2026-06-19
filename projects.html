@@ -4,7 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Gomolemo Tshenye</title>
+  <meta name="author" content="Gomolemo Tshenye" />
   <meta name="description" content="Selected projects by Gomolemo Tshenye — Android, .NET, React, statistical analysis, and cloud-integrated web apps." />
+  <!--
+    ============================================================
+    PORTFOLIO TASK — REQUIREMENT MAP (projects.html)
+    Author: Gomolemo Tshenye
+    Covers: Projects section with screenshots and descriptions.
+    Projects 01–04 use inline SVG illustrations (no screenshot
+    available / private repo); 05–06 use real screenshots from
+    /images. 07–09 are empty placeholder cards for future work.
+    ============================================================
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,6 +36,8 @@
       <div class="nav-links">
         <a href="index.html" class="nav-link">home</a>
         <a href="about.html" class="nav-link">about</a>
+        <!-- NEW · ADDED FOR TTG TASK -->
+        <a href="index.html#services" class="nav-link">services</a>
         <a href="projects.html" class="nav-link">projects</a>
         <a href="contact.html" class="nav-link">contact</a>
       </div>
@@ -40,6 +53,7 @@
       <div class="mm-inner">
         <a href="index.html">home</a>
         <a href="about.html">about</a>
+        <a href="index.html#services">services</a>
         <a href="projects.html">projects</a>
         <a href="contact.html">contact</a>
       </div>
@@ -47,6 +61,7 @@
   </nav>
 
   <main>
+    <!-- ===== REQUIRED: Projects section with screenshots and descriptions ===== -->
     <section class="section">
       <div class="reveal">
         <div class="section-eyebrow">selected work</div>
@@ -56,12 +71,32 @@
         </p>
       </div>
 
+      <!-- Extra (not required): quick stats strip summarising project count, languages, etc. -->
+      <div class="stats-strip reveal">
+        <div class="stat">
+          <div class="stat-num">06</div>
+          <div class="stat-label">projects shipped</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">07</div>
+          <div class="stat-label">languages used</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">04</div>
+          <div class="stat-label">stack categories</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">2023</div>
+          <div class="stat-label">building since</div>
+        </div>
+      </div>
+
       <div class="projects reveal-stagger">
 
-        <!-- 01 Lotto Lab -->
+        <!-- 01 Lotto Lab — hand-drawn SVG bar chart + lottery balls stands in for a screenshot (project is private) -->
         <article class="project">
-          <div class="project-thumb svg-thumb">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<div class="project-thumb">
+            <img src="images/LottoLab.png" alt="Lotto Lab screenshot" />
               <defs>
                 <linearGradient id="lg1" x1="0" x2="1">
                   <stop offset="0" stop-color="#E8A56B" stop-opacity="0.0"/>
@@ -107,8 +142,8 @@
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span>2025 · personal</span>
-              <span class="index">01 / 06</span>
+              <span>2025 · personal · Solo </span>
+              <span class="index">01 / 09</span>
             </div>
             <h3>Lotto Lab</h3>
             <p class="project-desc">
@@ -120,15 +155,15 @@
               <span class="tag">VS Code</span>
             </div>
             <div class="project-links">
-              <span class="project-link muted">→ code (private)</span>
+              <a href="https://github.com/GomolemoTshenye/Lotto-Lab" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
             </div>
           </div>
         </article>
 
-        <!-- 02 Wallet Willow -->
+        <!-- 02 Wallet Willow — SVG phone mock-up of the budgeting app's donut chart, used in place of a real screenshot -->
         <article class="project">
-          <div class="project-thumb svg-thumb">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<div class="project-thumb">
+            <img src="images/WalletWillow.png" alt="Wallet Willow screenshot" />
               <!-- phone frame -->
               <rect x="120" y="20" width="160" height="180" rx="20" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
               <rect x="130" y="35" width="140" height="150" rx="8" fill="#14161B"/>
@@ -152,8 +187,8 @@
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span>2025 · PROG7313 · team</span>
-              <span class="index">02 / 06</span>
+              <span>2025 · ACADEMIC · team</span>
+              <span class="index">02 / 09</span>
             </div>
             <h3>Wallet Willow</h3>
             <p class="project-desc">
@@ -166,16 +201,15 @@
               <span class="tag">Android</span>
             </div>
             <div class="project-links">
-              <span class="project-link muted">→ academic submission</span>
+              <a href="https://github.com/GomolemoTshenye/WalletWillow" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
             </div>
           </div>
         </article>
 
-        <!-- 03 TechLogistics -->
+        <!-- 03 TechLogistics — SVG diagram of the three-container Docker architecture (api / mvc / db) -->
         <article class="project">
-          <div class="project-thumb svg-thumb">
-            <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <!-- docker containers -->
+    <div class="project-thumb">
+            <img src="images/TechMove.png" alt="TechLogistics screenshot" />
               <g font-family="JetBrains Mono" font-size="9" fill="#E8E4DC">
                 <rect x="40"  y="60" width="100" height="100" rx="6" fill="#181B22" stroke="#E8A56B" stroke-width="1.2"/>
                 <text x="90" y="78" text-anchor="middle">api</text>
@@ -209,8 +243,8 @@
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span>2025 · PROG7311 · solo</span>
-              <span class="index">03 / 06</span>
+              <span>2025 · ACADEMIC · solo</span>
+              <span class="index">03 / 09</span>
             </div>
             <h3>TechLogistics</h3>
             <p class="project-desc">
@@ -224,12 +258,12 @@
               <span class="tag">NUnit</span>
             </div>
             <div class="project-links">
-              <span class="project-link muted">→ academic submission</span>
+              <a href="#" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
             </div>
           </div>
         </article>
 
-        <!-- 04 Emeris Pulse -->
+        <!-- 04 Emeris Pulse — SVG of three overlapping phone mock-ups, representing the eight-screen React prototype -->
         <article class="project">
           <div class="project-thumb svg-thumb">
             <svg viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -253,8 +287,8 @@
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span>2025 · INSY7311 · solo</span>
-              <span class="index">04 / 06</span>
+              <span>2025 · ACADEMIC · solo</span>
+              <span class="index">04 / 09</span>
             </div>
             <h3>Emeris Pulse</h3>
             <p class="project-desc">
@@ -267,22 +301,22 @@
               <span class="tag">UX / Usability</span>
             </div>
             <div class="project-links">
-              <span class="project-link muted">→ academic submission</span>
+              <a href="#" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
             </div>
           </div>
         </article>
 
-        <!-- 05 Azure-Integrated Web App -->
+        <!-- 05 Azure-Integrated Web App — real screenshot from /images, satisfies "Projects section with screenshots" -->
         <article class="project">
           <div class="project-thumb">
             <img src="images/Azure-Integrated Web App.png" alt="Azure-integrated ASP.NET Core web application screenshot" />
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span>2024 · academic</span>
-              <span class="index">05 / 06</span>
+              <span>2025 · Academic Submission · Solo</span>
+              <span class="index">05 / 09</span>
             </div>
-            <h3>Azure-Integrated Web App</h3>
+            <h3>(EventEase)Azure-Integrated Web App</h3>
             <p class="project-desc">
               An ASP.NET Core MVC web application that uses Azure services for blob storage and hosting. A useful first taste of treating cloud infrastructure as a first-class part of the application, not an afterthought.
             </p>
@@ -293,24 +327,24 @@
               <span class="tag">Blob Storage</span>
             </div>
             <div class="project-links">
-              <span class="project-link muted">→ academic submission</span>
+              <a href="https://github.com/GomolemoTshenye/EventEase/tree/main" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
             </div>
           </div>
         </article>
 
-        <!-- 06 Cybersecurity Chatbot -->
+        <!-- 06 Cybersecurity Awareness Chatbot — real screenshot -->
         <article class="project">
           <div class="project-thumb">
             <img src="images/Cybersecurity Awareness Chatbot.jpg" alt="Cybersecurity awareness chatbot interface screenshot" />
           </div>
           <div class="project-body">
             <div class="project-meta">
-              <span>2024 · academic</span>
-              <span class="index">06 / 06</span>
+              <span>2025 · Academic Submission · Solo</span>
+              <span class="index">06 / 09</span>
             </div>
             <h3>Cybersecurity Awareness Chatbot</h3>
             <p class="project-desc">
-              A chatbot designed to walk users through common online threats phishing, password hygiene, social engineering — in plain language. Built to make the security advice that usually lives in PDFs feel like a conversation instead.
+              A chatbot designed to walk users through common online threats phishing, password hygiene, social engineering  in plain language. Built to make the security advice that usually lives in PDFs feel like a conversation instead.
             </p>
             <div class="project-tags">
               <span class="tag">Python</span>
@@ -319,7 +353,59 @@
               <span class="tag">CSS</span>
             </div>
             <div class="project-links">
-              <span class="project-link muted">→ academic submission</span>
+              <a href="https://github.com/GomolemoTshenye/Cybersecurity-Awareness-Chatbot" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-template">
+          <div class="project-thumb">
+            <img src="images/ABCRETAILSTORE.png" alt="ABC Retail Cloud Management Portal screenshot" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2025 · Academic Submission · Solo</span>
+              <span class="index">08 / 09</span>
+            </div>
+            <h3>ABC Retail Cloud Management Portal</h3>
+            <p class="project-desc">
+              This project extends the ABC Retail web application (a cloud-based retail management system) by implementing a modern, scalable, and cost-efficient architecture using Azure serverless technologies. The portal provides real-time analytics, inventory management, and customer engagement features, enhancing the overall user experience and operational efficiency.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Https</span>
+              <span class="tag">Azure Functions</span>
+              <span class="tag">Scalability</span>
+              <span class="tag">C#</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/GomolemoTshenye/ABC-Retail-Cloud-Management-Portal/tree/main" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="project project-template">
+          <div class="project-thumb">
+            <img src="images/ContractMonthlyClaimSystem.png" alt="Contract Monthly Claim System screenshot" />
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span>2025 · Academic Submission · Solo </span>
+              <span class="index">09 / 09</span>
+            </div>
+            <h3>(CMCS) Contract Monthly Claim System</h3>
+            <p class="project-desc">
+              The Contract Monthly Claim System (CMCS) is a comprehensive, full-stack web application designed to automate the submission, verification, approval, and reporting of monthly claims for contract lecturers.
+
+Built with ASP.NET MVC 5, Entity Framework Code-First, and ASP.NET Identity, this system enforces robust business rules and features a multi-tiered approval workflow, eliminating manual paperwork and streamlining the payroll pipeline.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C#</span>
+              <span class="tag">ASP.NET</span>
+              <span class="tag">Entity Framework</span>
+            </div>
+            <div class="project-links">
+              <a href="http://github.com/GomolemoTshenye/ContractMonthlyClaimSystemsPrototype/tree/main" class="project-link" target="_blank" rel="noopener">→ GitHub</a>
             </div>
           </div>
         </article>
@@ -330,14 +416,32 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <span>© 2026 Gomolemo Tshenye</span>
-      <span>
-        <a href="mailto:israeltshenye@gmail.com">israeltshenye@gmail.com</a>
-        &nbsp;·&nbsp;
-        <a href="https://github.com/GomolemoTshenye" target="_blank" rel="noopener">github</a>
-        &nbsp;·&nbsp;
-        <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320" target="_blank" rel="noopener">linkedin</a>
-      </span>
+      <div class="footer-brand">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>gomolemo.tshenye</span>
+      </div>
+      <nav class="footer-social" aria-label="Social media links">
+        <a href="https://github.com/GomolemoTshenye" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+            <path d="M9 18c-4.51 2-5-2-7-2"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gomolemo-tshenye-328b18320" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="mailto:israeltshenye@gmail.com" aria-label="Email" title="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/>
+            <path d="m22 7-10 5L2 7"/>
+          </svg>
+        </a>
+      </nav>
+      <div class="footer-copy">© 2026 Gomolemo Tshenye. All rights reserved.</div>
     </div>
   </footer>
 
